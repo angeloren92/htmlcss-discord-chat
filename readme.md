@@ -23,3 +23,4 @@ icons::
 add friend <i class="bi bi-person-fill-add"></i>
 Home <i class="bi bi-houses-fill"></i>
 bell <i class="bi bi-bell-fill"></i>
+search <i class="bi bi-search"></i>
