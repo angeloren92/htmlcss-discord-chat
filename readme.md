@@ -18,3 +18,8 @@ Se sono presenti molti contatti, la scrollbar appare solo sulla sezione dedicata
 Aggiungere un bottone rapido di nuova chat in basso a destra in posizione fissa.
 
 Buon divertimento e confermate lettura come al solito :babyyoda: 
+
+icons::
+add friend <i class="bi bi-person-fill-add"></i>
+Home <i class="bi bi-houses-fill"></i>
+bell <i class="bi bi-bell-fill"></i>
