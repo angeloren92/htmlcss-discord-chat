@@ -10,5 +10,47 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px dashed rgb(87, 0, 158);
+}
+
+/* body */
+body {
+    width: 512px;
+}
+
+/* container */
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* header */
+
+/* main */
+main {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    overflow: auto;
+    bottom: 0;
+    
+    .side-box {
+        background-color: antiquewhite;
+        flex: 20% 1 0;
+
+    }
+
+    .main-box {
+        background-color: rgb(93, 187, 156);
+        flex: 80% 0 0;
+        overflow: auto;
+        margin-top: 10px;
+        border-radius: 30px 0 0;
+    }
+}
+
+/* footer */
+footer {
+    background-color: aquamarine;
+    height: 100px;
 }
