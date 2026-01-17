@@ -62,17 +62,17 @@ main {
         
         input:checked + label::before {
             content: "";
-            height: 52px;
+            height: 55px;
             border-right: 5px solid rgba(255, 255, 255, 0.993);
             border-radius: 0 10px 10px 0;    
             position: absolute;
-            top: 13px;
+            top: 15px;
             left: 1px;
         }
 
         input:checked + label .icon {
-            width: 65px;
-            height: 65px;
+            width: 70px;
+            height: 70px;
             box-shadow: 0 0 20px rgb(255, 0, 0);
         }
     }
@@ -85,8 +85,6 @@ main {
 .icon:hover {
     box-shadow: 0 0 20px rgb(255, 255, 255)
 }
-
-
 
 /* main box */
 .main-box {
@@ -131,11 +129,11 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 30px 0;
+    margin: 5px 0;
     color: rgba(211, 211, 211, 0.568);
     text-shadow: 0 1px 2px rgb(41, 37, 37);
     border-radius: 20px;
-    padding: 2px;
+    padding: 10px;
     position: relative;
     
     .photo-box {
@@ -166,6 +164,10 @@ main {
 }
 
 /* highlight message box*/
+.message-box:hover {
+    background-color: rgb(92, 92, 92);
+    color: white;
+}
 
 /* status flag */
 .flag {
@@ -237,3 +239,5 @@ footer {
         }
     }
 }
+
+/* new chat */
