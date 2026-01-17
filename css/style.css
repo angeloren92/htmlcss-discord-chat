@@ -34,23 +34,52 @@ main {
 
 /* side box */
 .side-box {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
     flex: 90px 0 0;
     gap: 15px;
     padding-top: 30px;
-
-    .side-item img {        
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-    }
     
-    .side-item:first-child img {
-        border-radius: 20%;
+    .side-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        
+        .side-item:first-of-type .icon {
+            border-radius: 20%;
+        }
+
+        input {
+            display: none;
+        }
+        
+        label {
+            cursor: pointer;
+            margin: 8px;
+            
+            img {        
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+            }
+        }
+
+        input:checked + label::before {
+            content: "";
+            height: 52px;
+            border-right: 5px solid white;
+            border-radius: 0 10px 10px 0;    
+            position: absolute;
+            top: 13px;
+            left: 1px;
+                        
+        }
     }
 }
+
+
+
+
+
 
 /* main box */
 .main-box {
