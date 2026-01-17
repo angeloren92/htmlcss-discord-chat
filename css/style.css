@@ -44,9 +44,6 @@ main {
         align-items: center;
         position: relative;
         
-        .side-item:first-of-type .icon {
-            border-radius: 20%;
-        }
 
         input {
             display: none;
@@ -62,22 +59,32 @@ main {
                 border-radius: 50%;
             }
         }
-
+        
         input:checked + label::before {
             content: "";
             height: 52px;
-            border-right: 5px solid white;
+            border-right: 5px solid rgba(255, 255, 255, 0.993);
             border-radius: 0 10px 10px 0;    
             position: absolute;
             top: 13px;
             left: 1px;
-                        
         }
+
+        input:checked + label .icon {
+            width: 65px;
+            height: 65px;
+            box-shadow: 0 0 20px rgb(255, 0, 0);
+        }
+    }
+    
+    .side-item:first-child .icon {
+        border-radius: 20px;
     }
 }
 
-
-
+.icon:hover {
+    box-shadow: 0 0 20px rgb(255, 255, 255)
+}
 
 
 
@@ -157,6 +164,8 @@ main {
         flex: 10% 0 1;
     }
 }
+
+/* highlight message box*/
 
 /* status flag */
 .flag {
