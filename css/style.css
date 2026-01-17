@@ -206,13 +206,20 @@ footer {
         width: 40px;
         position: fixed;
         transform: translate(-50%, -50%);
-        left: 460px;
+        left: 440px;
         bottom: 90px;
         color: rgba(196, 201, 200, 0.938);
         font-size: 40px;
         border-radius: 50%;
-        box-shadow: 0 0 5px white;
-        
+        box-shadow: 0 2 5px white; 
+    }
+
+    .add-chat:hover {
+        height: 60px;
+        width: 60px;
+        font-size: 60px;
+        color: white;
+        box-shadow: 0 -4px 20px red;
     }
 }
 
