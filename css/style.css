@@ -37,7 +37,7 @@ main {
     display: flex;
     flex-direction: column;
     text-align: center;
-    flex: 20% 1 0;
+    flex: 90px 0 0;
     gap: 15px;
     padding-top: 30px;
 
@@ -54,8 +54,9 @@ main {
 
 /* main box */
 .main-box {
-    background-color: rgba(50, 50, 50, 0.5);
-    flex: 80% 0 0;
+    background-color: rgb(50, 50, 50);
+    flex: auto 1 1;
+    min-width: 310px;
     overflow: auto;
     margin-top: 10px;
     padding: 20px;
@@ -99,6 +100,11 @@ main {
     text-shadow: 0 1px 2px rgb(41, 37, 37);
     border-radius: 20px;
     padding: 2px;
+    position: relative;
+    
+    .photo-box {
+        position: relative;
+    }
     
     .photo-icon {
         width: 50px;
@@ -123,11 +129,34 @@ main {
     }
 }
 
+/* status flag */
+.flag {
+    border: 5px solid rgb(50, 50, 50);
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 3px;
+}
+
+.red {
+    background-color: red;
+}
+.orange {
+    background-color: orange;
+}
+.green {
+    background-color: green;
+}
+
 
 /* footer */
 footer {
     background-color: rgb(60, 60, 60);
-    height: 100px;    
+    height: 100px;
+    flex-shrink: 1;
 }
 
 .navbar {
@@ -169,5 +198,4 @@ footer {
             border-radius: 50%;
         }
     }
-
 }
