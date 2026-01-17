@@ -196,7 +196,24 @@ main {
 footer {
     background-color: rgb(60, 60, 60);
     height: 100px;
-    flex-shrink: 1;
+
+    .add-chat {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(145, 142, 142, 0.603);
+        height: 40px;
+        width: 40px;
+        position: fixed;
+        transform: translate(-50%, -50%);
+        left: 460px;
+        bottom: 90px;
+        color: rgba(196, 201, 200, 0.938);
+        font-size: 40px;
+        border-radius: 50%;
+        box-shadow: 0 0 5px white;
+        
+    }
 }
 
 .navbar {
@@ -240,4 +257,3 @@ footer {
     }
 }
 
-/* new chat */
